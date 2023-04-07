@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+        }
+        .login {
+            width: 100%;
+            height: 100vh;
+            display: grid;
+            place-items: center;
+        }
+        .form-container {
+            display: grid;
+            grid-template-rows: auto 1f1 auto;
+            width: 300px;
+        }
+        .logo {
+
+        }
+    </style>
+</head>
+<body>
+    <div class="login">
+        <div class="form-container">
+            <img src="./logos/logo_yard_sale.svg" alt="logo" class="logo">
+
+            <h1 class="title"> Crear nueva clave</h1>
+            <p class="subtitle">Ingrese nueva clave para su cuenta</p>
+
+            <form action="/" class="form">
+                <label for="passwd" class="label">Clave</label>
+                <input type="password" id="passwd" placeholder="**********" class="input input-passwd">
+
+                <label for="new-passwd" class="label">Clave</label>
+                <input type="password" id="new-passwd" placeholder="**********" class="input input-passwd">
+
+                <input type="submit" value="Confirmar" class="primary-button login-button">
+            </form>
+        </div>
+    </div>
+</body>
+</html>
